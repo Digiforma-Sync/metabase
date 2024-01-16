@@ -15,4 +15,6 @@ ENV MB_DB_USER=$POSTGRESQL_ADDON_USER
 
 ENV MB_DB_TYPE="postgres"
 
+COPY resources/sample-database.db.mv.db plugins/sample-database.db
+
 EXPOSE 3000
